@@ -1,5 +1,6 @@
 // components/SimulatorCard.tsx
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface SimulatorCardProps {
   title: string;
@@ -15,10 +16,13 @@ const SimulatorCard = ({ title, description, image, path }: SimulatorCardProps) 
         {/* Replace with actual image when available */}
         <div className="absolute inset-0 flex items-center justify-center text-gray-500">
           {image ? (
-            <img 
+            <Image 
               src={image} 
               alt={`${title} simulator preview`} 
-              className="w-full h-full object-cover"
+              className="object-cover"
+              fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              priority
             />
           ) : (
             <span>シミュレーションプレビュー</span>
