@@ -1,5 +1,4 @@
 // components/Header.tsx
-import { useState } from 'react';
 import Link from 'next/link';
 import HamburgerMenu from './HamburgerMenu';
 
