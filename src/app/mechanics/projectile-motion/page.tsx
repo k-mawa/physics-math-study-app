@@ -2,7 +2,6 @@
 'use client';
 
 import { useState } from 'react';
-import { Slider } from '@/app/components/ui/slider';
 
 // This is a placeholder for the actual simulator component
 // You would implement the actual physics simulation here
